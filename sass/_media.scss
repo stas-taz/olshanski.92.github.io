@@ -1,0 +1,460 @@
+@media (max-width: 1200px) {
+    .nav {
+        &_item {
+            padding-right: 24px;
+        }
+    }
+
+    .request {
+        &_header_text {
+            font-size: 56px;
+        }
+
+        &_subheader_text {
+            font-size: 36px;
+        }
+    }
+
+    .work_with {
+        &_text_icon {
+            width: 296px;
+        }
+    }
+
+    .mobile {
+        &_item {
+            width: 300px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .nav {
+        &_item {
+            padding-right: 14px;
+        }
+
+        &_link {
+            font-size: 12px;
+        }
+    }
+
+    .logo {
+        img {
+            width: 100%;
+        }
+
+        &_text {
+            font-size: 10px;
+        }
+
+        .logo_call_number {
+            font-size: 20px;
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+
+    .request {
+
+        &_header_text,
+        h1 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+
+        &_subheader_text,
+        h2 {
+            font-size: 28px;
+        }
+
+        &_request_btn {
+            @include btn;
+            margin-top: 102px;
+            width: 200px;
+            height: 54px;
+            font-size: 16px;
+          }
+    }
+    
+
+    .work_with {
+        &_item {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_text_icon {
+            margin-top: 20px;
+        }
+    }
+
+    .mobile {
+        &_item {
+            width: 208px;
+        }
+
+        &_text {
+            font-size: 20px;
+        }
+    }
+
+    .footer {
+        &_box>div {
+            width: auto;
+        }
+
+        &_box {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_social_item {
+            width: 100%;
+        }
+
+        &_links_item {
+            width: 410px;
+            margin-top: 40px;
+        }
+
+        &_downloads {
+            margin-top: 40px;
+            justify-content: center;
+        }
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .nav {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 20px;
+        background: rgba(0, 0, 0, 0.9);
+        transition: 0.6s all;
+
+            a {
+                width: 100%;
+            }
+
+        &_active {
+            left: 0;
+        }
+
+        &_item {
+            margin-top: 40px;
+            border: none;
+            padding-right: 0;
+        }
+
+        &_link {
+            font-size: 20px;
+        }
+    }
+
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 12px;
+
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background: #ffff;
+            margin-bottom: 2px;
+            transform: 0.5s all;
+        }
+
+        &_active {
+            span {
+                margin-bottom: -2px;
+
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+
+                &:nth-child(2) {
+                    display: none;
+                }
+
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+
+    .logo {
+        height: auto;
+        button {
+            margin-left: auto;
+            display: block;
+            width: 156px;
+            height: 32px;
+        }
+
+    }
+
+    .request {
+        &_header_text, h1 {
+            font-size: 36px;
+            line-height: 46px;
+        }
+
+        &_subheader_text, h2 {
+            font-size: 22px;
+        }
+    }
+
+    .car {
+        &_img {
+            width: 100%;
+        }
+    }
+
+    .xs-hidden {
+        display: none;
+    }
+    .xs-visible {
+        display: block;
+    }
+
+}
+
+@media (max-width: 575px) {
+    header {
+        height: 30px;
+    }
+    nav {
+        min-height: 30px;
+    }
+
+    .nav {
+        width: 100%;
+
+        &_link {
+            font-size: 16px;
+            padding: 20px 20px;
+        }
+    }
+
+    .logo {
+        top: 50px;
+        padding: 0;
+        min-height: 60px;
+            &_text {
+                display: none;
+            }
+            .logo_call_number {
+                font-size: 12px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+
+            button {
+                width: 110px;
+                height: 22px;
+                font-size: 10px;
+            }
+
+            &_img {
+                margin-top: 16px;
+            }
+    }
+
+    .request {
+        min-height: 400px;
+        padding: 52px 0 32px 0;
+
+            &_header_text, h1 {
+                font-size: 30px;
+                line-height: 46px;
+            }
+
+            &_subheader_text, h2 {
+                margin-top: 32px;
+                font-size: 20px;
+                line-height: 32px;
+            }
+
+            &_text, p {
+                display: none;
+            }
+
+            &_request_btn {
+                margin-top: 50px;
+                margin-top: 102px;
+                width: 210px;
+                height: 50px;
+                font-size: 16px;
+            }
+    }
+
+    .work_with {
+        padding: 22px 0 36px 0;
+
+            &_subheader {
+                margin-top: 16px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            &_item {
+                margin-top: 20px;
+            }
+
+            &_cicle {
+                width: 100px;
+                height: 100px;
+            }
+
+            &_text_icon {
+                width: 100%;
+            }
+    }
+
+    .mobile {
+        padding: 26px 0 43px 0;
+
+            &_subheader {
+                margin-top: 16px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            &_item {
+                margin-top: 30px;
+                width: 100%;
+                height: 254px;
+            }
+
+            &_text {
+                font-size: 18px;
+            }
+    }
+
+    .car {
+        padding: 25px 0 30px 0;
+            &_subheader {
+                display: none;
+            }
+
+            &_subtitle {
+                display: none;
+            }
+
+            &_img {
+                margin-top: 36px;
+                width: 100%;
+            }
+
+            &_subheader_text {
+                margin-top: 22px;
+                font-size: 17px;
+            }
+    }
+
+    .conditions {
+        padding: 25px 0 25px 0;
+
+            &_subheader {
+                margin-top: 16px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            &_items {
+                padding: 0;
+                margin-top: 16px;
+                margin-bottom: 20px;
+            }
+
+            &_title {
+                font-size: 16px;
+            }
+
+            &_list {
+                li {
+                    font-size: 14px;
+                }
+            }
+
+            &_desc {
+                font-size: 14px;
+            }
+    }
+
+    .world {
+        min-height: 400px;
+        padding: 30px 0 30px 0;
+        
+            &_subheader {
+                margin-top: 16px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            &_title {
+                font-size: 14px;
+            }
+
+            &_desc {
+                font-size: 14px;
+                bottom: 30px;
+            }
+    }
+
+    .footer {
+        padding: 20px 0 25px 0;
+        
+            &_line {
+                width: 250px;
+            }
+
+            &_box {
+                margin-top: 16px;
+            }
+
+            &_social_item {
+                width: 150px;
+                margin: 0 auto;
+            }
+
+            &_links_item {
+                margin-top: 16px;
+                flex-wrap: wrap;
+                width: 100%;
+
+                    a {
+                        margin: 0 6px;
+                    }
+            }
+
+            &_links_subheader {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            &_downloads {
+                margin-top: 16px;
+            }
+    }
+    
+
+    
+}
